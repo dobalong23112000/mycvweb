@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reponsive-header {
+  display: none;
 }
+@media only screen and (max-width: 428px) {
+  #header .items-header {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  #header {
+    padding: 0;
+    align-items: center;
+    height: 70px;
+    width: 100vw;
+    background-color: black;
+  }
+  .activeheaderreponsive {
+    height: 100vh !important;
+  }
+  .activeitemsreponsive {
+    display: flex !important;
+  }
+  .reponsive-header {
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    color: white;
+  }
+  #banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .content-services .description-title {
+    width: 340px !important;
+  }
+  .content-services {
+    height: 100%;
+    padding-top: 50px;
+  }
+  .items-service {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+  #services {
+    height: fit-content !important;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  .items-service .item {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+  }
+  .content-projects {
+    padding-top: 50px;
+  }
+  .content-projects .title-projects {
+    padding-top: 0;
+  }
+  .content-projects .projects {
+    width: 340px !important;
+  }
+  .content-contact {
+    flex-direction: column;
+  }
+  #contact {
+    height: fit-content !important;
+    padding-bottom: 50px;
+  }
+  #contact .content-contact .left {
+    width: 100%;
+    border-right: none;
+    padding-left: 0;
+    align-items: center;
+    margin-top: 50px;
+    height: fit-content;
+    margin-bottom: 30px;
+  }
+  #contact .content-contact {
+    height: fit-content;
+  }
+  #contact .content-contact .right .content-right {
+    width: 100%;
+    padding: 0;
+  }
+  .content-contact .right {
+    width: 65% !important;
+  }
+  #about .content-about {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  #about {
+    height: 128vh;
+  }
+  #about .content-about .right-content {
+    width: 60%;
+    margin-bottom: 50px;
+    align-items: flex-start;
+  }
+  .content-about .left-content img {
+    height: 280px;
+    width: 280px;
+  }
+  .content-about .left-content .borderimg {
+    width: 280px;
+    height: 280px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    left: -40px;
+    top: 75px;
+  }
+  .content-projects .projects {
+    position: initial !important;
+  }
+  .content-projects {
+    position: relative;
+  }
+  .content-projects .projects .icons {
+    width: 428px;
+    height: 100%;
+    align-items: center;
+    right: 0;
+    z-index: 3;
+  }
+  .content-projects .projects .icons .prev {
+    border-radius: 0;
+    border: 0;
+    font-size: xxx-large;
+  }
+  .content-projects .projects .icons .next {
+    border-radius: 0;
+    border: 0;
+    font-size: xxx-large;
+  }
+  .content-projects .projects .icons .prev:hover {
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+  .content-projects .projects .icons .next:hover {
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+  .content-contact .left .title {
+    text-align: center;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 415px) {
+  .content-projects .projects .icons {
+    width: 414px !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 391px) {
+  .content-projects .projects .icons {
+    width: 390px !important;
   }
 }

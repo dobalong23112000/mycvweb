@@ -1,0 +1,30 @@
+#banner {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://essenceofgentleman.com/wp-content/uploads/2021/05/50s-slideshow-min.jpg");
+}
+.content-banner {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.content-banner .item {
+  font-size: xxx-large;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.content-banner button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid red;
+  background: linear-gradient(to left, transparent 50%, red 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+.content-banner button:hover {
+  cursor: pointer;
+  background-position: left;
+}

@@ -1,0 +1,86 @@
+#contact {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(27, 27, 27, 0.932);
+}
+.content-contact {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.content-contact .left {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  border-right: 1px solid white;
+  padding-left: 150px;
+}
+.content-contact .left .title {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.content-contact .left .address-items {
+}
+.content-contact .left .address-items .item {
+  display: flex;
+  width: 100%;
+
+  margin-bottom: 30px;
+}
+.address-items .item div {
+  margin-left: 20px;
+}
+
+.content-contact .right {
+  width: 50%;
+  height: 60%;
+
+  color: white;
+}
+.content-contact .right .content-right {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 50px;
+}
+.content-contact .right .content-right .title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.content-contact .right .content-right .description {
+  color: #d1d1d1;
+  margin-bottom: 20px;
+}
+.content-contact .right .content-right .input {
+  width: 70%;
+  margin-bottom: 20px;
+}
+.content-contact .right .content-right .input input {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #d1d1d1;
+  color: white;
+  font-size: 16px;
+}
+form button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: transparent;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+form button:hover {
+  background-color: red;
+  cursor: pointer;
+  border: 1px solid red;
+}
